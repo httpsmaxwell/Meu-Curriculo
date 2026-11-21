@@ -2,7 +2,7 @@
 
 Currículo online de Maxwell Oliveira, Desenvolvedor · QA · Automação, de Manaus (AM).
 
-🌐 **Ver online:** https://httpsmaxwell.github.io/Meu-Curriculo/
+🌐 **Ver online:** https://cv-maxwell-oliveira.netlify.app/
 
 ## Conteúdo
 
