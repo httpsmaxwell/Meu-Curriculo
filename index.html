@@ -88,6 +88,12 @@ section.card.show{opacity:1;transform:none}
 .item p{color:var(--muted);font-size:.95rem}
 .item .addr{color:var(--muted);font-size:.85rem;margin-top:4px}
 .project-link{color:var(--accent);font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.project-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.project{padding:16px;border-radius:12px;background:var(--surface-2);border:1px solid var(--border)}
+.project-head{display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap;margin-bottom:8px}
+.project h3{font-size:1rem;font-weight:700}
+.project p{color:var(--muted);font-size:.9rem;line-height:1.55}
+.project .org{font-size:.8rem;margin:10px 0 0}
 
 .bullets{margin:10px 0 0 18px;color:var(--muted);font-size:.95rem;display:grid;gap:6px}
 .bullets li::marker{color:var(--accent)}
@@ -140,6 +146,8 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:0 0 40px}
   .social{justify-content:flex-start}
   section.card{border:0;border-top:1px solid #bbb;border-radius:0;padding:14px 0;margin:0;box-shadow:none;opacity:1;transform:none;break-inside:auto}
   .item{break-inside:avoid}
+  .project-grid{grid-template-columns:1fr}
+  .project{break-inside:avoid}
   .sec-title{break-after:avoid}
   a{color:#000;text-decoration:none}
   footer{padding:12px 0 0}
@@ -224,18 +232,38 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:0 0 40px}
     </section>
 
     <section class="card" id="projects">
-      <h2 class="sec-title"><i class="fas fa-laptop-code" aria-hidden="true"></i>Projetos selecionados</h2>
-      <div class="timeline">
-        <div class="item">
-          <div class="item-head"><h3>ConectaDroid</h3><a class="project-link" href="https://github.com/httpsmaxwell/controle-remoto-do-celular" target="_blank" rel="noopener noreferrer">Código no GitHub</a></div>
+      <h2 class="sec-title"><i class="fas fa-laptop-code" aria-hidden="true"></i>Projetos</h2>
+      <div class="project-grid">
+        <article class="project">
+          <div class="project-head"><h3>ConectaDroid</h3><a class="project-link" href="https://github.com/httpsmaxwell/controle-remoto-do-celular" target="_blank" rel="noopener noreferrer">Código</a></div>
           <p>Aplicativo para Windows que simplifica o pareamento e a conexão de celulares Android por Wi-Fi e abre o espelhamento com scrcpy.</p>
           <div class="org">Python · Tkinter · ADB · scrcpy · Zeroconf</div>
-        </div>
-        <div class="item">
-          <div class="item-head"><h3>Prisma — Jogos online</h3><a class="project-link" href="https://prisma-io.netlify.app/" target="_blank" rel="noopener noreferrer">Ver projeto</a></div>
+        </article>
+        <article class="project">
+          <div class="project-head"><h3>Mira Manaus</h3></div>
+          <p>Aplicação web para descobrir estabelecimentos em Manaus, consultar avaliações e compartilhar listas.</p>
+          <div class="org">HTML · CSS · JavaScript · Firebase · Cloudinary</div>
+        </article>
+        <article class="project">
+          <div class="project-head"><h3>Prisma — Jogos online</h3><a class="project-link" href="https://prisma-io.netlify.app/" target="_blank" rel="noopener noreferrer">Ver projeto</a></div>
           <p>Hub de quatro jogos de navegador, com partidas contra o computador e salas online entre jogadores.</p>
           <div class="org">HTML · CSS · JavaScript · PeerJS</div>
-        </div>
+        </article>
+        <article class="project">
+          <div class="project-head"><h3>Meu Primeiro Dashboard</h3><a class="project-link" href="https://github.com/httpsmaxwell/Meu-Primeiro-Dashboard" target="_blank" rel="noopener noreferrer">Código</a></div>
+          <p>Dashboard de vendas no Power BI com três páginas de indicadores, análise de produtos e distribuição geográfica, baseado em cerca de 51 mil pedidos.</p>
+          <div class="org">Power BI · Excel</div>
+        </article>
+        <article class="project">
+          <div class="project-head"><h3>Reiniciador Instantâneo de Roteador</h3><a class="project-link" href="https://github.com/httpsmaxwell/reiniciador-instantaneo-de-roteador" target="_blank" rel="noopener noreferrer">Código</a></div>
+          <p>Automação que acessa a interface web de um roteador ZTE/Claro e solicita a reinicialização.</p>
+          <div class="org">Python · Selenium · Chrome</div>
+        </article>
+        <article class="project">
+          <div class="project-head"><h3>Morfologia de Angiospermas — Glossário</h3><a class="project-link" href="https://github.com/httpsmaxwell/Morfologia-de-Angiospermas---Gloss-rio-do-guia-de-campo" target="_blank" rel="noopener noreferrer">Código</a></div>
+          <p>Glossário online de botânica com 236 verbetes, organizados por capítulos, busca e referências às páginas do guia.</p>
+          <div class="org">HTML · CSS · JavaScript</div>
+        </article>
       </div>
     </section>
 
