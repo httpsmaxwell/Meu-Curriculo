@@ -12,6 +12,7 @@ Currículo online de Maxwell Oliveira, Desenvolvedor · QA · Automação, de Ma
 - **Habilidades:** linguagens, frameworks e ferramentas
 - **Certificados:** cursos de Python, Deep Learning, Cyber Security, IoT e outros
 - **Interesses**
+- **Projetos:** seis projetos próprios, com links para sites publicados ou repositórios
 
 ## Recursos da página
 
@@ -19,11 +20,15 @@ Currículo online de Maxwell Oliveira, Desenvolvedor · QA · Automação, de Ma
 - Modo claro e escuro (segue o sistema, com botão para alternar)
 - Botão flutuante de contato pelo WhatsApp
 - Animação de entrada das seções ao rolar a página
+- Metadados para compartilhamento em redes sociais
+- Acesso por teclado com atalho para o conteúdo principal
 
 ## Estrutura
 
 ```
 Meu-Curriculo/
+├── img/
+│   └── maxwell-oliveira.jpg  # Foto usada no perfil e nos compartilhamentos
 ├── index.html    # Currículo completo (HTML, CSS e JavaScript embutidos)
 └── README.md
 ```
